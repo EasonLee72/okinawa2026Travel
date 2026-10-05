@@ -1197,7 +1197,7 @@
 
   
   <script>
-    // Tab 切換
+        // Tab 切換
     function switchTab(tabId, shouldScroll = true) {
       // 隱藏所有 pane
       document.querySelectorAll('.tab-pane').forEach(el => el.classList.remove('active'));
@@ -1227,14 +1227,12 @@
         bottomBtn.classList.add('active');
       }
 
-      // 點擊時自動平滑滾動至日期導覽列頂住位置
       // 點擊時自動平滑滾動至日期導覽列精準吸頂位置 (計算 Banner + Hero 物理高度)
       if (shouldScroll) {
         const banner = document.querySelector('.top-banner-wrapper');
         const hero = document.querySelector('.hero');
         const targetY = (banner ? banner.offsetHeight : 0) + (hero ? hero.offsetHeight : 0);
         window.scrollTo({ top: targetY, behavior: 'smooth' });
-      }
       }
     }
 
