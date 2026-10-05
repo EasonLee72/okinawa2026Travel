@@ -1,0 +1,13 @@
+# 忽略含有未加密機密之原始憑證與文件
+*.pdf
+*.eml
+*.txt
+
+# 圖片已由 Base64 內嵌至 index.html
+*.jpg
+*.jpeg
+*.png
+
+# 暫存檔
+*.py
+*.js
